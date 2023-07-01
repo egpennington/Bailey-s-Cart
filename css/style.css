@@ -19,7 +19,18 @@ body {
 }
 
 /* Utilities */
-.hi-light { color: var(--hi-light-color); }
+h1 { 
+    font-style: italic;
+    margin-bottom: 3px;
+}
+
+.hi-light { 
+    color: var(--hi-light-color); }
+
+.capras {    
+    color: #fff;
+    text-shadow: 1px 1px 3px var(--dark-color);
+}
 
 .container {
     display: flex;
@@ -30,9 +41,7 @@ body {
     margin: 30px auto;
 }
 
-i {
-    color: var(--hi-light-color);
-}
+i { color: var(--hi-light-color); }
 
 img {
     width: 150px;
@@ -63,6 +72,11 @@ input {
     font-family: 'Rubik', sans-serif;
     font-size: 20px;
     text-align: center;
+}
+
+#add-button i { 
+    color: #fff; 
+    margin-left: 20px;
 }
 
 #add-button:hover {

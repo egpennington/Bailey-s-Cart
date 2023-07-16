@@ -223,7 +223,7 @@ function appendItemToDairyListEl(item) {
     let itemValue = item[1]    
     let newEl = document.createElement("li")    
     newEl.textContent = itemValue    
-    newEl.addEventListener("dblclick", function() {
+    newEl.addEventListener("click", function() {
         let exactLocationOfItemInDB = ref(database, `dairy/${itemID}`)   
         remove(exactLocationOfItemInDB)
     })    
@@ -235,7 +235,7 @@ function appendItemToDryListEl(item) {
     let itemValue = item[1]    
     let newEl = document.createElement("li")    
     newEl.textContent = itemValue    
-    newEl.addEventListener("dblclick", function() {
+    newEl.addEventListener("click", function() {
         let exactLocationOfItemInDB = ref(database, `dry/${itemID}`) 
         remove(exactLocationOfItemInDB)
     })    
@@ -247,7 +247,7 @@ function appendItemToFrozenListEl(item) {
     let itemValue = item[1]    
     let newEl = document.createElement("li")    
     newEl.textContent = itemValue    
-    newEl.addEventListener("dblclick", function() {
+    newEl.addEventListener("click", function() {
         let exactLocationOfItemInDB = ref(database, `frozen/${itemID}`) 
         remove(exactLocationOfItemInDB)
     })    
@@ -259,7 +259,7 @@ function appendItemToMiscListEl(item) {
     let itemValue = item[1]    
     let newEl = document.createElement("li")    
     newEl.textContent = itemValue    
-    newEl.addEventListener("dblclick", function() {
+    newEl.addEventListener("click", function() {
         let exactLocationOfItemInDB = ref(database, `misc/${itemID}`) 
         remove(exactLocationOfItemInDB)
     })    
@@ -271,7 +271,7 @@ function appendItemToMedicineListEl(item) {
     let itemValue = item[1]    
     let newEl = document.createElement("li")    
     newEl.textContent = itemValue    
-    newEl.addEventListener("dblclick", function() {
+    newEl.addEventListener("click", function() {
         let exactLocationOfItemInDB = ref(database, `medicine/${itemID}`) 
         remove(exactLocationOfItemInDB)
     })    

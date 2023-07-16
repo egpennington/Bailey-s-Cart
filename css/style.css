@@ -19,15 +19,14 @@ body {
 }
 
 /* Utilities */
-h1 { 
+h1 {
     font-style: italic;
     margin-bottom: 3px;
 }
 
-.hi-light { 
-    color: var(--hi-light-color); }
+.hi-light { color: var(--hi-light-color); }
 
-.capras {    
+.capras {
     color: #fff;
     text-shadow: 1px 1px 3px var(--dark-color);
 }
@@ -46,7 +45,7 @@ i { color: var(--hi-light-color); }
 img {
     width: 150px;
     height: 160px;
-    border-radius: 50%;  
+    border-radius: 50%;
 }
 
 input {
@@ -62,29 +61,35 @@ input {
     width: 100%;
 }
 
-#add-button {
-    background-color: var(--hi-light-color);
-    color: var(--secondary-light-color);
-    width: 100%;
-    padding: 15px;    
-    border: none;
-    border-radius: 8px;
-    font-family: 'Rubik', sans-serif;
-    font-size: 20px;
-    text-align: center;
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
 }
 
-#add-button i { 
-    color: #fff; 
+.btn {
+    background-color: var(--hi-light-color);
+    color: var(--secondary-light-color);
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    width: 140px;
+}
+
+.btn i {
+    color: #fff;
     margin-left: 20px;
 }
 
-#add-button:hover {
+.btn:hover {
     background: var(--dark-color);
     cursor: pointer;
 }
 
-ul {   
+ul {
     list-style: none;
     display: flex;
     justify-content: center;
@@ -99,7 +104,7 @@ ul {
     background-color: #CBC9C5;
     color: var(--dark-color);
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
-    padding: 10px 15px; 
+    padding: 10px 15px;
     width: fit-content;
     border-radius: 8px;
     text-align: center;
@@ -110,4 +115,16 @@ ul {
     background: #697F8D;
     color: var(--secondary-light-color);
     cursor: pointer;
+ }
+ 
+ @media(max-width: 480px) {
+   .buttons {
+     grid-template-columns: 1fr 1fr;
+   }
+ }
+ 
+ @media(max-width: 300px) {
+   .buttons {
+     grid-template-columns: 1fr;
+   }
  }

@@ -36,37 +36,37 @@ const medicineListEl = document.getElementById("medicine-list-el")
 
 
 /* catagory button inputs to list areas*/
-addButtonProduceEl.addEventListener("click", function() {
+addButtonProduceEl.addEventListener("dblclick", function() {
     let inputValue = inputFieldEl.value    
     push(produceListInDB, inputValue)    
     clearInputFieldEl()
 })
 
-addButtonDairyEl.addEventListener("click", function() {
+addButtonDairyEl.addEventListener("dblclick", function() {
     let inputValue = inputFieldEl.value    
     push(dairyListInDb, inputValue)    
     clearInputFieldEl()
 })
 
-addButtonDryEl.addEventListener("click", function() {
+addButtonDryEl.addEventListener("dblclick", function() {
     let inputValue = inputFieldEl.value
     push(dryListInDb, inputValue)    
     clearInputFieldEl()
 })
 
-addButtonFrozenEl.addEventListener("click", function() {
+addButtonFrozenEl.addEventListener("dblclick", function() {
     let inputValue = inputFieldEl.value
     push(frozenListInDb, inputValue)    
     clearInputFieldEl()
 })
 
-addButtonMiscEl.addEventListener("click", function() {
+addButtonMiscEl.addEventListener("dblclick", function() {
     let inputValue = inputFieldEl.value
     push(miscListInDb, inputValue)    
     clearInputFieldEl()
 })
 
-addButtonMedicineEl.addEventListener("click", function() {
+addButtonMedicineEl.addEventListener("dblclick", function() {
     let inputValue = inputFieldEl.value
     push(medicineListInDb, inputValue)    
     clearInputFieldEl()
@@ -211,7 +211,7 @@ function appendItemToProduceListEl(item) {
     let itemValue = item[1]    
     let newEl = document.createElement("li")    
     newEl.textContent = itemValue    
-    newEl.addEventListener("click", function() {
+    newEl.addEventListener("dblclick", function() {
         let exactLocationOfItemInDB = ref(database, `produce/${itemID}`) 
         remove(exactLocationOfItemInDB)
     })    
@@ -223,7 +223,7 @@ function appendItemToDairyListEl(item) {
     let itemValue = item[1]    
     let newEl = document.createElement("li")    
     newEl.textContent = itemValue    
-    newEl.addEventListener("click", function() {
+    newEl.addEventListener("dblclick", function() {
         let exactLocationOfItemInDB = ref(database, `dairy/${itemID}`)   
         remove(exactLocationOfItemInDB)
     })    
@@ -235,7 +235,7 @@ function appendItemToDryListEl(item) {
     let itemValue = item[1]    
     let newEl = document.createElement("li")    
     newEl.textContent = itemValue    
-    newEl.addEventListener("click", function() {
+    newEl.addEventListener("dblclick", function() {
         let exactLocationOfItemInDB = ref(database, `dry/${itemID}`) 
         remove(exactLocationOfItemInDB)
     })    
@@ -247,7 +247,7 @@ function appendItemToFrozenListEl(item) {
     let itemValue = item[1]    
     let newEl = document.createElement("li")    
     newEl.textContent = itemValue    
-    newEl.addEventListener("click", function() {
+    newEl.addEventListener("dblclick", function() {
         let exactLocationOfItemInDB = ref(database, `frozen/${itemID}`) 
         remove(exactLocationOfItemInDB)
     })    
@@ -259,7 +259,7 @@ function appendItemToMiscListEl(item) {
     let itemValue = item[1]    
     let newEl = document.createElement("li")    
     newEl.textContent = itemValue    
-    newEl.addEventListener("click", function() {
+    newEl.addEventListener("dblclick", function() {
         let exactLocationOfItemInDB = ref(database, `misc/${itemID}`) 
         remove(exactLocationOfItemInDB)
     })    
@@ -271,7 +271,7 @@ function appendItemToMedicineListEl(item) {
     let itemValue = item[1]    
     let newEl = document.createElement("li")    
     newEl.textContent = itemValue    
-    newEl.addEventListener("click", function() {
+    newEl.addEventListener("dblclick", function() {
         let exactLocationOfItemInDB = ref(database, `medicine/${itemID}`) 
         remove(exactLocationOfItemInDB)
     })    

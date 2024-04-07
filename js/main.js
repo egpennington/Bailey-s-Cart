@@ -36,37 +36,37 @@ const medicineListEl = document.getElementById("medicine-list-el")
 
 
 /* catagory button inputs to list areas*/
-addButtonProduceEl.addEventListener("dblclick", function() {
+addButtonProduceEl.addEventListener("click", function() {
     let inputValue = inputFieldEl.value    
     push(produceListInDB, inputValue)    
     clearInputFieldEl()
 })
 
-addButtonDairyEl.addEventListener("dblclick", function() {
+addButtonDairyEl.addEventListener("click", function() {
     let inputValue = inputFieldEl.value    
     push(dairyListInDb, inputValue)    
     clearInputFieldEl()
 })
 
-addButtonDryEl.addEventListener("dblclick", function() {
+addButtonDryEl.addEventListener("click", function() {
     let inputValue = inputFieldEl.value
     push(dryListInDb, inputValue)    
     clearInputFieldEl()
 })
 
-addButtonFrozenEl.addEventListener("dblclick", function() {
+addButtonFrozenEl.addEventListener("click", function() {
     let inputValue = inputFieldEl.value
     push(frozenListInDb, inputValue)    
     clearInputFieldEl()
 })
 
-addButtonMiscEl.addEventListener("dblclick", function() {
+addButtonMiscEl.addEventListener("click", function() {
     let inputValue = inputFieldEl.value
     push(miscListInDb, inputValue)    
     clearInputFieldEl()
 })
 
-addButtonMedicineEl.addEventListener("dblclick", function() {
+addButtonMedicineEl.addEventListener("click", function() {
     let inputValue = inputFieldEl.value
     push(medicineListInDb, inputValue)    
     clearInputFieldEl()
